@@ -1,0 +1,110 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../public/assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    height: 35vh;
+
+    .title {
+        position: absolute;
+        z-index: -1;
+        height: 35vh;
+    }
+
+    .bread {
+        height: 35vh;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.vertical-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.content {
+    height: 40vh;
+
+    .instructions {
+        img {
+            width: 20vh;
+        }
+
+        .plus {
+            width: 10vh;
+        }
+    }
+
+    .views {
+        img {
+            width: 20vh;
+        }
+    }
+}
+
+.footer {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5vh;
+    margin: 0 15vh;
+
+    img {
+        width: 10vh;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    header {
+        .title {
+            height: 35vw;
+        }
+    
+        .bread {
+            height: 35vw;
+        }
+    }
+
+    .content {
+        .instructions {
+            img {
+                width: 20vw;
+            }
+    
+            .plus {
+                width: 10vw;
+            }
+        }
+    
+        .views {
+            img {
+                width: 20vw;
+            }
+        }
+    }
+
+    .footer {
+        margin: 0 15vw;
+
+        img {
+            width: 10vw;
+        }
+    }
+}
